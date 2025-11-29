@@ -16,8 +16,8 @@ import { db, auth } from './firebase';
 // ==========================================
 // 🔴 CHANGE 2: YOUR CLOUDINARY KEYS (From Screenshot)
 // ==========================================
-const CLOUDINARY_CLOUD_NAME = "dvtye0dk9"; 
-const CLOUDINARY_UPLOAD_PRESET = "to-let"; 
+const CLOUDINARY_CLOUD_NAME = process.env.REACT_APP_CLOUDINARY_CLOUD_NAME || "dvtye0dk9";
+const CLOUDINARY_UPLOAD_PRESET = process.env.REACT_APP_CLOUDINARY_UPLOAD_PRESET || "to-let";
 
 // --- INITIAL STATE ---
 const INITIAL_FORM_STATE = {
